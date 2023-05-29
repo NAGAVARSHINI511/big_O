@@ -3,7 +3,7 @@ import time
 
 #function to generate random numbers
 def generate_random_numbers(start, end, count):
-    numbers = list(range(start, end+1)) #storing numbers in list
+    numbers = list(range(start, end+1))              #storing numbers in list
     random.shuffle(numbers)
     return numbers[:count]
 
@@ -18,9 +18,10 @@ print(random_numbers)
 
 key=int(input("Enter an element to search :"))
 
-code='''
+start_time = time.time()
+
 for index, element in enumerate(random_numbers):
-        if element == key:
+        if element == key:                            #compares each element with key (linear search)
             found=bool(True)
             break 
          
@@ -29,10 +30,7 @@ if found==True:
     print(f"The element {key} is present in {index} index")
 else:
      print("{key} not found ") 
-'''
 
-start_time = time.time()
-exec(code)
 end_time = time.time()
 
 execution_time = end_time - start_time
