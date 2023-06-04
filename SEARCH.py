@@ -4,7 +4,7 @@ from timeit import default_timer as timer
 #function to generate random numbers
 def generate_random_numbers(start, end, count):
     numbers = list(range(start, end+1))              #inserting numbers in list
-    random.shuffle(numbers)
+    random.shuffle(numbers)     #shuffle
     return numbers[:count]
 
 start_number = 1
