@@ -1,7 +1,6 @@
 import random
 from timeit import default_timer as timer
-#changes made in new_branch
-#change in demo branch
+#changes made in new branch
 
 #function to generate random numbers
 def generate_random_numbers(start, end, count):
